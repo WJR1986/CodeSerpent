@@ -1,0 +1,114 @@
+/* index.css */
+
+body {
+    background-color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.main-container {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+    width: 100%; /* Ensure the buttons don't overflow */
+}
+
+.button {
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 100px; /* Set a maximum width for the buttons */
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+.button:hover {
+    background-color: #235a96;
+}
+
+.button2 {
+    background-color: #5bc0de;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 100px; /* Set a maximum width for the buttons */
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+.button2:hover {
+    background-color: #48a3c6;
+}
+
+.navbar-nav {
+    flex-wrap: nowrap; /* Prevent buttons from wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    /* Apply styles for screens with a maximum width of 1024px */
+    .container {
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        overflow-x: hidden; /* Hide horizontal scroll */
+        align-items: center;
+    }
+
+    .button,
+    .button2 {
+        width: 100%; /* Make buttons full width */
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Apply styles for screens with a maximum width of 768px (e.g., tablets and smaller devices) */
+    .container {
+        padding: 20px; /* Reduce container padding for smaller screens */
+    }
+
+    .row {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+
+    .button,
+    .button2 {
+        width: 100%; /* Make buttons full-width on smaller screens */
+    }
+}
+

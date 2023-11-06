@@ -1,0 +1,67 @@
+{
+    "heading": "Python Challenges",
+    "challenges": [
+        {
+            "title": "Challenge 1",
+            "description": "Write a Python program that prints 'Hello, World!' to the console.",
+            "expected_output": "'Hello, World!'",
+            "pseudoCode": "# Your task is to print 'Hello, World!' to the console."
+        },
+        {
+            "title": "Challenge 2",
+            "description": "Write a Python program to calculate the sum of two numbers.",
+            "expected_output": "The sum of 5 and 3 is 8.",
+            "pseudoCode": "# Your task is to calculate the sum of two numbers and print the result."
+        },
+        {
+            "title": "Challenge 3",
+            "description": "Write a Python program to find the square of a given number.",
+            "expected_output": "The square of 4 is 16.",
+            "pseudoCode": "# Your task is to calculate the square of a given number and print the result."
+        },
+        {
+            "title": "Challenge 4",
+            "description": "Write a Python program to check if a number is even or odd.",
+            "expected_output": "7 is Odd.",
+            "pseudoCode": "# Your task is to determine if a number is even or odd and print the result."
+        },
+        {
+            "title": "Challenge 5",
+            "description": "Write a Python program to find the maximum of three numbers.",
+            "expected_output": "The maximum of 10, 7, and 14 is 14.",
+            "pseudoCode": "# Your task is to find the maximum of three numbers and print the result."
+        },
+        {
+            "title": "Challenge 6",
+            "description": "Write a Python program to reverse a string.",
+            "expected_output": "'Hello' reversed is 'olleH'.",
+            "pseudoCode": "# Your task is to reverse a given string and print the result."
+        },
+        {
+            "title": "Challenge 7",
+            "description": "Write a Python program to calculate the factorial of a given number.",
+            "expected_output": "The factorial of 5 is 120.",
+            "pseudoCode": "# Your task is to calculate the factorial of a given number and print the result."
+        },
+        {
+            "title": "Challenge 8",
+            "description": "Write a Python program to find common elements between two lists.",
+            "expected_output": "Common elements in [1, 2, 3, 4, 5] and [3, 4, 5, 6, 7] are [3, 4, 5].",
+            "pseudoCode": "# Your task is to find common elements between two lists and print the result."
+        },
+        {
+            "title": "Challenge 9",
+            "description": "Write a Python program to find the length of a string.",
+            "expected_output": "The length of 'Python' is 6.",
+            "pseudoCode": "# Your task is to find the length of a given string and print the result."
+        },
+        {
+            "title": "Challenge 10",
+            "description": "Write a Python program to check if a given string is a palindrome.",
+            "expected_output": "'racecar' is a Palindrome.",
+            "pseudoCode": "# Your task is to check if a given string is a palindrome and print the result."
+        }
+    ],
+    "section_revision_url": "/basicsRevision.html"
+
+}

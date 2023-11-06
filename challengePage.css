@@ -1,0 +1,134 @@
+/* Common styles for all devices */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #121212;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #333;
+}
+
+.container img {
+  transition: transform 0.5s;
+  height: 50px;
+  width: 50px;
+}
+
+.container img:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.main-section {
+  padding: 30px;
+}
+
+.revision-button-div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.output-div,
+.code-div {
+  background-color: #333;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.output-div p,
+.code-div p {
+  font-weight: bolder;
+}
+
+.fixed-image {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  transition: transform 0.5s;
+}
+
+.fixed-image:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.navbar {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  
+}
+
+/* Navigation bar styles */
+/* Ensure the navigation items are stacked vertically for all devices */
+.navbar-nav {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%; /* Set a maximum width for the navbar-nav */
+  overflow-x: scroll; /* Add horizontal scrolling when the content exceeds the width */
+  
+}
+
+.navbar-brand {
+  /* background-color: #333; */
+  color: #fff !important;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.70em;
+}
+
+/* Hide the navbar toggler button on larger screens */
+.navbar-toggler {
+  display: none;
+}
+
+.dropdown .btn {
+  border: 1px solid lightgray;
+}
+
+/* Display the navigation items on larger screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row; /* Display the navigation items in a row on larger screens */
+  }
+  .navbar-toggler {
+    display: none; /* Hide the toggler button on larger screens */
+  }
+}
+
+/* Styles for mid-sized devices (tablets) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+}
+
+/* Styles for small devices (phones) */
+@media (max-width: 576px) {
+  body {
+    padding: 5px;
+  }
+  .fixed-image {
+    display: none;
+  }
+
+  .main-section {
+    padding: 5px;
+  }
+
+  .code-div .cm-comment {
+    
+    text-wrap: wrap !important;
+  }
+
+  .CodeMirror-cursor {
+    width: 10px; /* Adjust the cursor width as needed */
+    height: 20px !important; /* Adjust the cursor height as needed */
+    background-color: red; /* Change cursor color as needed */
+    opacity: 0.7; /* Adjust cursor opacity as needed */
+  }
+}
